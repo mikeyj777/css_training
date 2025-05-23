@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import './App.css';
 import './styles/global.css';
+import W01 from './components/W01';
 
 const App = () => {
   return (
@@ -10,6 +11,8 @@ const App = () => {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/curr" element={<W01 />} />
+          {/* Add more routes as needed */}
         </Routes>
       </div>
     </Router>
